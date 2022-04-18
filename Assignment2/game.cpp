@@ -340,7 +340,10 @@ bool Game::render(){
 		this->menu.write(this->sdlr,"Lunch Time!!!!",c,4,62);
 	}
 //Checking gameover
-	if(this->transferObject.gameOver){
+	if(this->transferObject.gameOver==1){
+		this->winGame();
+	}
+	if(this->transferObject.gameOver==2){
 		this->winGame();
 	}
 
@@ -386,8 +389,10 @@ bool Game::render(){
 ///////Check Game end condition
 
 	if(SDL_GetTicks()-this->gameClock>=this->gameTime){
+		//cout<<this->transferObject.score<<"P2Score"<<endl;
 		if(this->player1.score>this->transferObject.score){
 			this->winGame();
+
 		}
 		else if(this->player1.score<this->transferObject.score){
 			this->endGame();
@@ -2593,7 +2598,7 @@ void Game::vecToTranferObject(vector<int> v){
 
 }
 void Game::transfer(){
-	if(!transferObject.gameOver){
+	if(transferObject.gameOver==0){
 		vector<int> v;
 		 if(this->isServer){
 			//cout<<"Transfer Started"<<endl;
@@ -2606,13 +2611,13 @@ void Game::transfer(){
 			v=this->c.transferData(this->myTransferObject,this->ip);
 		 }
 		 vecToTranferObject(v);
-		 if(transferObject.gameOver){
+		 if(transferObject.gameOver==1){
 			 cout<<"YOU WIN"<<endl;
 		 }
 	}
 }
 void Game::winGame(){
-	   myTransferObject.gameOver=1;
+	   myTransferObject.gameOver=2;
 		this->transfer();
 
 		bool enter =true;

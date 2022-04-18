@@ -363,7 +363,7 @@ bool Menu::render(SDL_Event event,SDL_Window* window,SDL_Renderer* sdlr){
 
 					this->write(sdlr, "Name: "+this->p1Name+" Hostel: "+this->p1Hostel, col, 110,440);
 					this->write(sdlr, "Are you Client: "+this->isClient+" Server IP Address: "+this->ip, col, 110,500);
-					this->write(sdlr, " Game Time: "+this->time, col, 110,550);
+					this->write(sdlr, " Game Time (Minutes): "+this->time, col, 110,550);
 					SDL_RenderPresent(sdlr);
 					if(n==0){
 						this->p1Name.pop_back();
