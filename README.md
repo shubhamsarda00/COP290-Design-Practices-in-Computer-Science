@@ -5,7 +5,7 @@ Installation Instructions:
 3. In the same terminal, run $ ./game to begin the game!
 
 
-Library Requirements
+Library Requirements:
 
 1. SDL2:  sudo apt-get install libsdl2-dev
 1. SDL2-Image:  sudo apt-get install libsdl-image-dev
