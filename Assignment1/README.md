@@ -1,3 +1,4 @@
+# Assignment 1
 In task 1, we've implemented simple functions used in a neural network such as matrix addition, 
 multiplication, pooling, activation and probability calculation to facilitate complete neural network 
 architectures in upcoming tasks.
