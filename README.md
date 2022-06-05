@@ -1,4 +1,6 @@
-This repo contains assignments done during the course COP290 (Design Practices in Computer Science) in Semester II 21-22 (https://www.cse.iitd.ac.in/~rijurekha/cop290_2022.html).
+This repo contains assignments done during the course COP290 (Design Practices in Computer Science) in Spring'22. 
+
+Course Webpage: https://www.cse.iitd.ac.in/~rijurekha/cop290_2022.html
 
 In Assignment 1, we developed an audio processing library to detect keywords in an audio file using Artificial Neural Networks.
 
