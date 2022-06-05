@@ -1,3 +1,4 @@
+# COP290: Design Practices in Computer Science
 This repo contains assignments done during the course COP290 (Design Practices in Computer Science) in Spring'22. 
 
 Course Webpage: https://www.cse.iitd.ac.in/~rijurekha/cop290_2022.html
