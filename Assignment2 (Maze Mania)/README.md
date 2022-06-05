@@ -1,7 +1,5 @@
-Maze Mania:
+# Maze Mania
 This is a 2-player maze arcade game developed as a part of the course COP-290. Wi-Fi is used as the medium connecting server and client.
-
-
 
 Installation Instructions:
 
